@@ -1,9 +1,19 @@
 <html>
-  <head></head>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
-    <input class="name" type="text">
-    <input class="surname" type="text">
-    <button class="put">Send</button>
+    <form>
+      <p>Add form data to Google Sheets</p>
+      <input class="name" type="text">
+      <input class="surname" type="text">
+      <button class="put">Send</button>
+    </form>
+
+    <div>
+      <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
+      <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
+    </div>
     <!--
     BEFORE RUNNING:
     ---------------
@@ -91,7 +101,5 @@
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script>
-    <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
-    <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
   </body>
 </html>
